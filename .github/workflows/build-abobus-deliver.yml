@@ -1,0 +1,66 @@
+name: Build and deliver ABOBUS123
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deliver:
+    if: ${{ github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[skip ci]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply overlay
+        shell: bash
+        run: |
+          set -euxo pipefail
+          base64 -d build-1.21.4/overlay.tar.xz.b64 > /tmp/overlay.tar.xz
+          tar -xJf /tmp/overlay.tar.xz -C .
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Build, save result, and publish jar to branch
+        shell: bash
+        run: |
+          set +e
+          mkdir -p build-1.21.4 release
+          chmod +x gradlew
+          ./gradlew clean build --no-daemon --stacktrace > build-1.21.4/build.log 2>&1
+          code=$?
+
+          rm -f release/ABOBUS123-1.21.4.jar
+          if [ "$code" -eq 0 ]; then
+            jar="$(find build/libs -maxdepth 1 -type f -name '*.jar' ! -name '*-sources.jar' ! -name '*-dev.jar' | head -n 1)"
+            if [ -n "$jar" ] && [ -f "$jar" ]; then
+              cp "$jar" release/ABOBUS123-1.21.4.jar
+              printf 'SUCCESS\nsource=%s\n' "$jar" > build-1.21.4/status.txt
+            else
+              printf 'FAILED\nreason=Gradle succeeded but no distributable jar was found\n' > build-1.21.4/status.txt
+              code=2
+            fi
+          else
+            printf 'FAILED\nexit_code=%s\n' "$code" > build-1.21.4/status.txt
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f build-1.21.4/status.txt build-1.21.4/build.log
+          if [ -f release/ABOBUS123-1.21.4.jar ]; then git add -f release/ABOBUS123-1.21.4.jar; fi
+          git commit -m "ABOBUS123 build result [skip ci]" || true
+          git push origin HEAD:main
+
+          tail -n 120 build-1.21.4/build.log || true
+          exit "$code"
