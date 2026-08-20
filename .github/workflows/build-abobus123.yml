@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "ABOBUS123-1.21.11-PORT.zip"
+      - "scripts/patch_1_21_11.py"
       - ".github/workflows/build-abobus123.yml"
 
 jobs:
@@ -23,6 +24,9 @@ jobs:
 
       - name: Extract source
         run: unzip -o ABOBUS123-1.21.11-PORT.zip
+
+      - name: Patch Minecraft 1.21.11 compatibility
+        run: python3 scripts/patch_1_21_11.py
 
       - name: Setup Java 21
         uses: actions/setup-java@v5
