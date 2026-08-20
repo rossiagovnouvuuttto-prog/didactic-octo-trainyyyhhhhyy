@@ -1,0 +1,58 @@
+name: Build ABOBUS123 1.21.4
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  JAVA_VERSION: '21'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Apply ABOBUS123 overlay
+        shell: bash
+        run: |
+          set -euxo pipefail
+          test -f build-1.21.4/overlay.tar.xz.b64
+          base64 -d build-1.21.4/overlay.tar.xz.b64 > /tmp/overlay.tar.xz
+          tar -xJf /tmp/overlay.tar.xz -C .
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Gradle build
+        shell: bash
+        run: |
+          set -euxo pipefail
+          chmod +x gradlew
+          ./gradlew clean build --no-daemon --stacktrace
+
+      - name: Collect distributable jars
+        if: success()
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p dist
+          find build/libs -maxdepth 1 -type f -name '*.jar' ! -name '*-sources.jar' ! -name '*-dev.jar' -print -exec cp {} dist/ \;
+          ls -lah dist
+
+      - name: Upload ABOBUS123 artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ABOBUS123-1.21.4
+          path: dist/*.jar
+          if-no-files-found: error
