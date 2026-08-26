@@ -40,8 +40,12 @@ run_encoded("patch_v19_phase3.py.gz.b64", ".abobus-phase3.py")
 run_encoded_parts("phase4", ".abobus-phase4.py")
 subprocess.run([sys.executable, str(script_dir / "patch_v19_phase5.py"), str(root)], cwd=root, check=True)
 
-phase6_encoded = script_dir / "phase6_runtime.patch.gz.b64"
-phase6_bytes = gzip.decompress(base64.b64decode(phase6_encoded.read_text().strip()))
+# Runtime port: modern 1.21.11 DrawContext/input/render-state mixin signatures.
+phase6_parts = sorted(script_dir.joinpath("phase6").glob("part*.b64"))
+if not phase6_parts:
+    raise SystemExit("Missing phase6 runtime patch parts")
+phase6_payload = "".join(p.read_text().strip() for p in phase6_parts)
+phase6_bytes = gzip.decompress(base64.b64decode(phase6_payload))
 phase6_file = root / ".abobus-phase6.patch"
 phase6_file.write_bytes(phase6_bytes)
 print("Applying runtime 1.21.11 mixin compatibility patch")
