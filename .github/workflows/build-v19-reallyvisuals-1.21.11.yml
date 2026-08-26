@@ -45,6 +45,28 @@ jobs:
           set -o pipefail
           gradle --no-daemon clean build --stacktrace 2>&1 | tee build.log
 
+      - name: Runtime mixin smoke test
+        working-directory: work
+        shell: bash
+        run: |
+          set +e
+          if ! command -v xvfb-run >/dev/null 2>&1; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq xvfb
+          fi
+          timeout 75s xvfb-run -a gradle --no-daemon runClient --stacktrace > runclient.log 2>&1
+          code=$?
+          echo "runClient exit=$code"
+          tail -n 220 runclient.log || true
+          if grep -Eqi 'Mixin apply for mod abobus123 failed|MixinApplyError|InvalidInjectionException|InvalidAccessorException|InvalidMixinException|MixinTransformerError|InjectionError' runclient.log; then
+            echo 'ABOBUS123 runtime mixin failure detected'
+            exit 1
+          fi
+          if [ "$code" -ne 0 ] && [ "$code" -ne 124 ]; then
+            echo 'runClient exited before smoke-test timeout'
+            exit "$code"
+          fi
+          echo 'No ABOBUS123 mixin apply errors during client bootstrap window'
+
       - name: Collect mapped Minecraft jars for port diagnostics
         if: always()
         shell: bash
@@ -70,4 +92,7 @@ jobs:
             work/build/libs/*.jar
             work/build/reports/**
             work/build.log
+            work/runclient.log
+            work/run/logs/latest.log
+            work/run/crash-reports/**
             work/diagnostics/**
