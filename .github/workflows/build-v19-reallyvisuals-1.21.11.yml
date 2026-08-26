@@ -45,6 +45,21 @@ jobs:
           set -o pipefail
           gradle --no-daemon clean build --stacktrace 2>&1 | tee build.log
 
+      - name: Collect mapped Minecraft jars for port diagnostics
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p work/diagnostics
+          find work/.gradle ~/.gradle -type f -name '*.jar' 2>/dev/null | grep -E 'minecraft|intermediary|yarn' | sort > work/diagnostics/jars.txt || true
+          while IFS= read -r f; do
+            case "$f" in
+              *minecraft*1.21.11*.jar|*minecraft*merged*.jar|*minecraft*client*.jar)
+                cp -n "$f" work/diagnostics/ 2>/dev/null || true
+                ;;
+            esac
+          done < work/diagnostics/jars.txt
+          ls -lh work/diagnostics || true
+
       - name: Upload build output and diagnostics
         if: always()
         uses: actions/upload-artifact@v4
@@ -55,3 +70,4 @@ jobs:
             work/build/libs/*.jar
             work/build/reports/**
             work/build.log
+            work/diagnostics/**
