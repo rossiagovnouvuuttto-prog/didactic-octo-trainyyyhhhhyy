@@ -39,3 +39,11 @@ run_encoded("patch_v19_phase2.py.gz.b64", ".abobus-phase2.py")
 run_encoded("patch_v19_phase3.py.gz.b64", ".abobus-phase3.py")
 run_encoded_parts("phase4", ".abobus-phase4.py")
 subprocess.run([sys.executable, str(script_dir / "patch_v19_phase5.py"), str(root)], cwd=root, check=True)
+
+phase6_encoded = script_dir / "phase6_runtime.patch.gz.b64"
+phase6_bytes = gzip.decompress(base64.b64decode(phase6_encoded.read_text().strip()))
+phase6_file = root / ".abobus-phase6.patch"
+phase6_file.write_bytes(phase6_bytes)
+print("Applying runtime 1.21.11 mixin compatibility patch")
+subprocess.run(["patch", "--batch", "--forward", "-p1", "-i", str(phase6_file)], cwd=root, check=True)
+phase6_file.unlink(missing_ok=True)
