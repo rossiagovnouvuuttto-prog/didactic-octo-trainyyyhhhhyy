@@ -26,3 +26,4 @@ subprocess.run(["patch", "--batch", "--forward", "-p1", "-i", str(patch_file)], 
 patch_file.unlink(missing_ok=True)
 run_encoded("patch_v19_phase2.py.gz.b64", ".abobus-phase2.py")
 run_encoded("patch_v19_phase3.py.gz.b64", ".abobus-phase3.py")
+run_encoded("patch_v19_phase4.py.gz.b64", ".abobus-phase4.py")
