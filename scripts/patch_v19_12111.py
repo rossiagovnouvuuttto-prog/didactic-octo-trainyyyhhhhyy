@@ -51,3 +51,5 @@ phase6_file.write_bytes(phase6_bytes)
 print("Applying runtime 1.21.11 mixin compatibility patch")
 subprocess.run(["patch", "--batch", "--forward", "-p1", "-i", str(phase6_file)], cwd=root, check=True)
 phase6_file.unlink(missing_ok=True)
+
+subprocess.run([sys.executable, str(script_dir / "patch_v19_phase7.py"), str(root)], cwd=root, check=True)
