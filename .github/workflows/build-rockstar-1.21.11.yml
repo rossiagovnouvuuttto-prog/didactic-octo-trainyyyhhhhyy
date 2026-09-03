@@ -5,8 +5,8 @@ on:
   push:
     branches: [ rockstar-1.21.11 ]
     paths:
-      - 'rockstar-client-1.21.11-port.zip'
       - '.github/workflows/build-rockstar-1.21.11.yml'
+      - 'scripts/**'
 
 permissions:
   contents: write
@@ -19,23 +19,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Check source archive
+      - name: Download prepared 1.21.11 source
         shell: bash
         run: |
-          test -f rockstar-client-1.21.11-port.zip || {
-            echo 'Upload rockstar-client-1.21.11-port.zip to this branch first.'
-            exit 2
-          }
+          set -euxo pipefail
+          curl -L --fail --retry 3 --retry-delay 2 \
+            'https://drive.usercontent.google.com/download?id=12IZ9jAO3VbjBRVU7sP2tAoHDWYlpRMV4&export=download&confirm=t' \
+            -o rockstar-client-1.21.11-port.zip
+          ls -lh rockstar-client-1.21.11-port.zip
+          file rockstar-client-1.21.11-port.zip
+          unzip -t rockstar-client-1.21.11-port.zip >/dev/null
 
       - name: Extract source
         shell: bash
         run: |
+          set -euxo pipefail
           rm -rf work
           mkdir work
           unzip -q rockstar-client-1.21.11-port.zip -d work
           project="$(find work -mindepth 1 -maxdepth 1 -type d | head -n1)"
           test -n "$project"
-          echo "PROJECT=$project" >> "$GITHUB_ENV"
+          echo "PROJECT=$GITHUB_WORKSPACE/$project" >> "$GITHUB_ENV"
+          echo "PROJECT=$GITHUB_WORKSPACE/$project"
 
       - name: Set up Java 21
         uses: actions/setup-java@v4
@@ -46,17 +51,20 @@ jobs:
       - name: Build
         shell: bash
         run: |
+          set -o pipefail
           cd "$PROJECT"
           chmod +x gradlew
-          ./gradlew clean build --no-daemon --stacktrace
+          ./gradlew clean build --no-daemon --stacktrace 2>&1 | tee "$GITHUB_WORKSPACE/build.log"
 
       - name: Collect JAR
         shell: bash
         run: |
+          set -euxo pipefail
           mkdir -p release
           jar="$(find "$PROJECT/build/libs" -maxdepth 1 -type f -name '*.jar' ! -name '*-sources.jar' ! -name '*-dev.jar' | head -n1)"
           test -n "$jar"
           cp "$jar" release/rockstar-client-1.21.11.jar
+          ls -lh release/rockstar-client-1.21.11.jar
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
