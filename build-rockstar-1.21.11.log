@@ -1,0 +1,1795 @@
+Downloading https://services.gradle.org/distributions/gradle-9.3.0-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+
+Welcome to Gradle 9.3.0!
+
+Here are the highlights of this release:
+ - Test reporting improvements
+ - Error and warning improvements
+ - Build authoring improvements
+
+For more details see https://docs.gradle.org/9.3.0/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :buildSrc:extractPluginRequests NO-SOURCE
+> Task :buildSrc:generatePluginAdapters NO-SOURCE
+> Task :buildSrc:compileJava
+> Task :buildSrc:compileGroovy
+> Task :buildSrc:compileGroovyPlugins NO-SOURCE
+> Task :buildSrc:pluginDescriptors
+> Task :buildSrc:processResources NO-SOURCE
+> Task :buildSrc:classes
+
+> Task :buildSrc:jar
+:jar: No valid plugin descriptors were found in META-INF/gradle-plugins
+
+> Configure project :
+Fabric Loom: 1.15.5
+
+Cannot remap modifiers because it does not exist in any of the targets [] or their parents.
+
+> Task :clean
+
+> Task :generateServiceLoader
+[ServiceLoader] Сканирование модулей...
+[ServiceLoader] Найдено модулей: 40
+[ServiceLoader] Файл провайдера обновлен: /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/main/resources/META-INF/services/moscow.rockstar.systems.modules.impl.BaseModule
+[ServiceLoader] Зарегистрировано модулей:
+  - Assist (moscow.rockstar.systems.modules.modules.other.Assist)
+  - AutoAccept (moscow.rockstar.systems.modules.modules.other.AutoAccept)
+  - AutoEvent (moscow.rockstar.systems.modules.modules.other.AutoEvent)
+  - CustomLoader (moscow.rockstar.systems.modules.modules.other.CustomLoader)
+  - DeathCords (moscow.rockstar.systems.modules.modules.other.DeathCords)
+  - FakePlayer (moscow.rockstar.systems.modules.modules.other.FakePlayer)
+  - HitSound (moscow.rockstar.systems.modules.modules.other.HitSound)
+  - ItemCooldowns (moscow.rockstar.systems.modules.modules.other.ItemCooldowns)
+  - ItemHighlighter (moscow.rockstar.systems.modules.modules.other.ItemHighlighter)
+  - NameProtect (moscow.rockstar.systems.modules.modules.other.NameProtect)
+  - Sounds (moscow.rockstar.systems.modules.modules.other.Sounds)
+  - AutoInvisible (moscow.rockstar.systems.modules.modules.player.AutoInvisible)
+  - AutoSprint (moscow.rockstar.systems.modules.modules.player.AutoSprint)
+  - AutoSwap (moscow.rockstar.systems.modules.modules.player.AutoSwap)
+  - InvUtils (moscow.rockstar.systems.modules.modules.player.InvUtils)
+  - MiddleClick (moscow.rockstar.systems.modules.modules.player.MiddleClick)
+  - PlayerUtils (moscow.rockstar.systems.modules.modules.player.PlayerUtils)
+  - ShiftTap (moscow.rockstar.systems.modules.modules.player.ShiftTap)
+  - Ambience (moscow.rockstar.systems.modules.modules.visuals.Ambience)
+  - Arrows (moscow.rockstar.systems.modules.modules.visuals.Arrows)
+  - BlockESP (moscow.rockstar.systems.modules.modules.visuals.BlockESP)
+  - CustomFog (moscow.rockstar.systems.modules.modules.visuals.CustomFog)
+  - CustomHitBox (moscow.rockstar.systems.modules.modules.visuals.CustomHitBox)
+  - FriendMarkers (moscow.rockstar.systems.modules.modules.visuals.FriendMarkers)
+  - HitColor (moscow.rockstar.systems.modules.modules.visuals.HitColor)
+  - HitEffect (moscow.rockstar.systems.modules.modules.visuals.HitEffect)
+  - Interface (moscow.rockstar.systems.modules.modules.visuals.Interface)
+  - ItemRadius (moscow.rockstar.systems.modules.modules.visuals.ItemRadius)
+  - Jump (moscow.rockstar.systems.modules.modules.visuals.Jump)
+  - KillEffects (moscow.rockstar.systems.modules.modules.visuals.KillEffects)
+  - MenuModule (moscow.rockstar.systems.modules.modules.visuals.MenuModule)
+  - Nametags (moscow.rockstar.systems.modules.modules.visuals.Nametags)
+  - ObjectInfo (moscow.rockstar.systems.modules.modules.visuals.ObjectInfo)
+  - Prediction (moscow.rockstar.systems.modules.modules.visuals.Prediction)
+  - Removals (moscow.rockstar.systems.modules.modules.visuals.Removals)
+  - SwingAnimation (moscow.rockstar.systems.modules.modules.visuals.SwingAnimation)
+  - TargetESP (moscow.rockstar.systems.modules.modules.visuals.TargetESP)
+  - ViewModel (moscow.rockstar.systems.modules.modules.visuals.ViewModel)
+  - Waypoints (moscow.rockstar.systems.modules.modules.visuals.Waypoints)
+  - World (moscow.rockstar.systems.modules.modules.visuals.World)
+
+> Task :compileJava NO-SOURCE
+> Task :processResources
+> Task :classes
+
+> Task :compileClientJava
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/base/CustomDrawContext.java:54: error: cannot find symbol
+import net.minecraft.item.ModelTransformationMode;
+                         ^
+  symbol:   class ModelTransformationMode
+  location: package net.minecraft.item
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/RenderUtility.java:19: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/RenderUtility.java:25: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/Draw3DUtility.java:23: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/Draw3DUtility.java:28: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/Draw3DUtility.java:29: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/CrystalRenderer.java:22: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/CrystalRenderer.java:23: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/CrystalRenderer.java:26: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/Batching.java:18: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/Batching.java:20: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/Batching.java:26: error: cannot find symbol
+    public Batching(VertexFormat vertexFormat) {
+                    ^
+  symbol:   class VertexFormat
+  location: class Batching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/TextBatchManager.java:25: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/TextBatchManager.java:27: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/TextBatchManager.java:31: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:18: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:19: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:20: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:27: error: cannot find symbol
+    public RectBatching(VertexFormat vertexFormat, MatrixStack matrices) {
+                        ^
+  symbol:   class VertexFormat
+  location: class RectBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FadeOutBatching.java:17: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FadeOutBatching.java:18: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FadeOutBatching.java:28: error: cannot find symbol
+    public FadeOutBatching(VertexFormat vertexFormat, MsdfFont font, float fadeoutStart, float fadeoutEnd, float maxWidth, float x) {
+                           ^
+  symbol:   class VertexFormat
+  location: class FadeOutBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RoundedRectBatching.java:17: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:28: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:29: error: cannot find symbol
+import net.minecraft.client.render.RenderPhase;
+                                  ^
+  symbol:   class RenderPhase
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:30: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:37: error: cannot find symbol
+    protected ShaderProgramKey programKey;
+              ^
+  symbol:   class ShaderProgramKey
+  location: class GlProgram
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:39: error: cannot find symbol
+    public GlProgram(Identifier id, VertexFormat vertexFormat) {
+                                    ^
+  symbol:   class VertexFormat
+  location: class GlProgram
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:52: error: package RenderPhase does not exist
+    public RenderPhase.ShaderProgram renderPhaseProgram() {
+                      ^
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:18: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:19: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:20: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:27: error: cannot find symbol
+    public IconBatching(VertexFormat vertexFormat, MatrixStack matrices) {
+                        ^
+  symbol:   class VertexFormat
+  location: class IconBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/ShadowBatching.java:16: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/ShadowBatching.java:27: error: cannot find symbol
+    public ShadowBatching(VertexFormat vertexFormat, MatrixStack matrices, float width, float height, float softness, BorderRadius borderRadius) {
+                          ^
+  symbol:   class VertexFormat
+  location: class ShadowBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FontBatching.java:17: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FontBatching.java:18: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FontBatching.java:24: error: cannot find symbol
+    public FontBatching(VertexFormat vertexFormat, MsdfFont font) {
+                        ^
+  symbol:   class VertexFormat
+  location: class FontBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/SquircleBatching.java:17: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/BlurBatching.java:13: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/BlurBatching.java:22: error: cannot find symbol
+    public BlurBatching(VertexFormat vertexFormat, MatrixStack matrices, float width, float height) {
+                        ^
+  symbol:   class VertexFormat
+  location: class BlurBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:50: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:51: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:54: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:57: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/impl/BlurProgram.java:30: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/impl/BlurProgram.java:32: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/game/ElytraUtility.java:49: error: cannot find symbol
+import net.minecraft.item.ArmorItem;
+                         ^
+  symbol:   class ArmorItem
+  location: package net.minecraft.item
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/game/EntityUtility.java:42: error: cannot find symbol
+import net.minecraft.item.SwordItem;
+                         ^
+  symbol:   class SwordItem
+  location: package net.minecraft.item
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:32: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:51: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:52: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:54: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:58: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:24: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:44: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:45: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:47: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:50: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:57: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:92: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:93: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:97: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:22: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:41: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:42: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:44: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:47: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:21: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:45: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:46: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:48: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:21: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:22: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:24: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:25: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:20: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:21: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:33: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:35: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:39: error: package net.minecraft.client.render.VertexFormat does not exist
+import net.minecraft.client.render.VertexFormat.DrawMode;
+                                               ^
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:3: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:19: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:20: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:22: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:32: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:54: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:55: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:57: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:61: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/FriendMarkers.java:31: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/BlockESP.java:17: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/BlockESP.java:26: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/BlockESP.java:27: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:22: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:23: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:34: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:40: error: package net.minecraft.client.render.VertexFormat does not exist
+import net.minecraft.client.render.VertexFormat.DrawMode;
+                                               ^
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/mixin/minecraft/client/gui/overlay/BackgroundRendererMixin.java:27: error: cannot find symbol
+import net.minecraft.client.render.BackgroundRenderer;
+                                  ^
+  symbol:   class BackgroundRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/mixin/minecraft/client/gui/overlay/BackgroundRendererMixin.java:29: error: cannot find symbol
+import net.minecraft.client.render.Fog;
+                                  ^
+  symbol:   class Fog
+  location: package net.minecraft.client.render
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+
+> Task :compileClientJava FAILED
+
+[Incubating] Problems report is available at: file:///home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileClientJava'.
+> Compilation failed; see the compiler output below.
+  Note: Recompile with -Xlint:deprecation for details.
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/base/CustomDrawContext.java:54: error: cannot find symbol
+  import net.minecraft.item.ModelTransformationMode;
+                           ^
+    symbol:   class ModelTransformationMode
+    location: package net.minecraft.item
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/RenderUtility.java:19: error: cannot find symbol
+  import com.mojang.blaze3d.platform.GlStateManager;
+                                    ^
+    symbol:   class GlStateManager
+    location: package com.mojang.blaze3d.platform
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/RenderUtility.java:25: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/Draw3DUtility.java:23: error: cannot find symbol
+  import com.mojang.blaze3d.platform.GlStateManager;
+                                    ^
+    symbol:   class GlStateManager
+    location: package com.mojang.blaze3d.platform
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/Draw3DUtility.java:28: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/Draw3DUtility.java:29: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/CrystalRenderer.java:22: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/CrystalRenderer.java:23: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/CrystalRenderer.java:26: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/Batching.java:18: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/Batching.java:20: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/Batching.java:26: error: cannot find symbol
+      public Batching(VertexFormat vertexFormat) {
+                      ^
+    symbol:   class VertexFormat
+    location: class Batching
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/TextBatchManager.java:25: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/TextBatchManager.java:27: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/TextBatchManager.java:31: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:18: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:19: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:20: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:27: error: cannot find symbol
+      public RectBatching(VertexFormat vertexFormat, MatrixStack matrices) {
+                          ^
+    symbol:   class VertexFormat
+    location: class RectBatching
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FadeOutBatching.java:17: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FadeOutBatching.java:18: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FadeOutBatching.java:28: error: cannot find symbol
+      public FadeOutBatching(VertexFormat vertexFormat, MsdfFont font, float fadeoutStart, float fadeoutEnd, float maxWidth, float x) {
+                             ^
+    symbol:   class VertexFormat
+    location: class FadeOutBatching
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RoundedRectBatching.java:17: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:28: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:29: error: cannot find symbol
+  import net.minecraft.client.render.RenderPhase;
+                                    ^
+    symbol:   class RenderPhase
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:30: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:37: error: cannot find symbol
+      protected ShaderProgramKey programKey;
+                ^
+    symbol:   class ShaderProgramKey
+    location: class GlProgram
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:39: error: cannot find symbol
+      public GlProgram(Identifier id, VertexFormat vertexFormat) {
+                                      ^
+    symbol:   class VertexFormat
+    location: class GlProgram
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:18: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:19: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:20: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:27: error: cannot find symbol
+      public IconBatching(VertexFormat vertexFormat, MatrixStack matrices) {
+                          ^
+    symbol:   class VertexFormat
+    location: class IconBatching
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/ShadowBatching.java:16: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/ShadowBatching.java:27: error: cannot find symbol
+      public ShadowBatching(VertexFormat vertexFormat, MatrixStack matrices, float width, float height, float softness, BorderRadius borderRadius) {
+                            ^
+    symbol:   class VertexFormat
+    location: class ShadowBatching
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FontBatching.java:17: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FontBatching.java:18: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FontBatching.java:24: error: cannot find symbol
+      public FontBatching(VertexFormat vertexFormat, MsdfFont font) {
+                          ^
+    symbol:   class VertexFormat
+    location: class FontBatching
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/SquircleBatching.java:17: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/BlurBatching.java:13: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/BlurBatching.java:22: error: cannot find symbol
+      public BlurBatching(VertexFormat vertexFormat, MatrixStack matrices, float width, float height) {
+                          ^
+    symbol:   class VertexFormat
+    location: class BlurBatching
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:50: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:51: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:54: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:57: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/impl/BlurProgram.java:30: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/impl/BlurProgram.java:32: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/game/ElytraUtility.java:49: error: cannot find symbol
+  import net.minecraft.item.ArmorItem;
+                           ^
+    symbol:   class ArmorItem
+    location: package net.minecraft.item
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/game/EntityUtility.java:42: error: cannot find symbol
+  import net.minecraft.item.SwordItem;
+                           ^
+    symbol:   class SwordItem
+    location: package net.minecraft.item
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:32: error: cannot find symbol
+  import com.mojang.blaze3d.platform.GlStateManager;
+                                    ^
+    symbol:   class GlStateManager
+    location: package com.mojang.blaze3d.platform
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:51: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:52: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:54: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:58: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:24: error: cannot find symbol
+  import com.mojang.blaze3d.platform.GlStateManager;
+                                    ^
+    symbol:   class GlStateManager
+    location: package com.mojang.blaze3d.platform
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:44: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:45: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:47: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:50: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:57: error: cannot find symbol
+  import com.mojang.blaze3d.platform.GlStateManager;
+                                    ^
+    symbol:   class GlStateManager
+    location: package com.mojang.blaze3d.platform
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:92: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:93: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:97: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:22: error: cannot find symbol
+  import com.mojang.blaze3d.platform.GlStateManager;
+                                    ^
+    symbol:   class GlStateManager
+    location: package com.mojang.blaze3d.platform
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:41: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:42: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:44: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:47: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:21: error: cannot find symbol
+  import com.mojang.blaze3d.platform.GlStateManager;
+                                    ^
+    symbol:   class GlStateManager
+    location: package com.mojang.blaze3d.platform
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:45: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:46: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:48: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:21: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:22: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:24: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:25: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:20: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:21: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:33: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:35: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:3: error: cannot find symbol
+  import com.mojang.blaze3d.platform.GlStateManager;
+                                    ^
+    symbol:   class GlStateManager
+    location: package com.mojang.blaze3d.platform
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:19: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:20: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:22: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:32: error: cannot find symbol
+  import com.mojang.blaze3d.platform.GlStateManager;
+                                    ^
+    symbol:   class GlStateManager
+    location: package com.mojang.blaze3d.platform
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:54: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:55: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:57: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:61: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/FriendMarkers.java:31: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/BlockESP.java:17: error: cannot find symbol
+  import net.minecraft.client.render.VertexFormat;
+                                    ^
+    symbol:   class VertexFormat
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/BlockESP.java:26: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/BlockESP.java:27: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:22: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKey;
+                                ^
+    symbol:   class ShaderProgramKey
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:23: error: cannot find symbol
+  import net.minecraft.client.gl.ShaderProgramKeys;
+                                ^
+    symbol:   class ShaderProgramKeys
+    location: package net.minecraft.client.gl
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:34: error: cannot find symbol
+  import net.minecraft.client.render.BufferRenderer;
+                                    ^
+    symbol:   class BufferRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/mixin/minecraft/client/gui/overlay/BackgroundRendererMixin.java:27: error: cannot find symbol
+  import net.minecraft.client.render.BackgroundRenderer;
+                                    ^
+    symbol:   class BackgroundRenderer
+    location: package net.minecraft.client.render
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/mixin/minecraft/client/gui/overlay/BackgroundRendererMixin.java:29: error: cannot find symbol
+  import net.minecraft.client.render.Fog;
+                                    ^
+    symbol:   class Fog
+    location: package net.minecraft.client.render
+  Note: Recompile with -Xlint:unchecked for details.
+  Note: Some input files use or override a deprecated API.
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  Note: Some input files use unchecked or unsafe operations.
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:52: error: package RenderPhase does not exist
+      public RenderPhase.ShaderProgram renderPhaseProgram() {
+                        ^
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:39: error: package net.minecraft.client.render.VertexFormat does not exist
+  import net.minecraft.client.render.VertexFormat.DrawMode;
+                                                 ^
+  /home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:40: error: package net.minecraft.client.render.VertexFormat does not exist
+  import net.minecraft.client.render.VertexFormat.DrawMode;
+                                                 ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+* Exception is:
+org.gradle.api.tasks.TaskExecutionException: Execution failed for task ':compileClientJava'.
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.lambda$executeIfValid$1(ExecuteActionsTaskExecuter.java:135)
+	at org.gradle.internal.Try$Failure.ifSuccessfulOrElse(Try.java:288)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:133)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:121)
+	at org.gradle.api.internal.tasks.execution.ProblemsTaskPathTrackingTaskExecuter.execute(ProblemsTaskPathTrackingTaskExecuter.java:41)
+	at org.gradle.api.internal.tasks.execution.FinalizePropertiesTaskExecuter.execute(FinalizePropertiesTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskExecutionModeExecuter.execute(ResolveTaskExecutionModeExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:57)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:74)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:36)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.executeTask(EventFiringTaskExecuter.java:77)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter$1.call(EventFiringTaskExecuter.java:52)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.api.internal.tasks.execution.EventFiringTaskExecuter.execute(EventFiringTaskExecuter.java:52)
+	at org.gradle.execution.plan.DefaultNodeExecutor.executeLocalTaskNode(DefaultNodeExecutor.java:55)
+	at org.gradle.execution.plan.DefaultNodeExecutor.execute(DefaultNodeExecutor.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:355)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$InvokeNodeExecutorsAction.execute(DefaultTaskExecutionGraph.java:343)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.lambda$execute$0(DefaultTaskExecutionGraph.java:339)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:84)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:339)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph$BuildOperationAwareExecutionAction.execute(DefaultTaskExecutionGraph.java:328)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.execute(DefaultPlanExecutor.java:459)
+	at org.gradle.execution.plan.DefaultPlanExecutor$ExecutorWorker.run(DefaultPlanExecutor.java:376)
+	at org.gradle.execution.plan.DefaultPlanExecutor.process(DefaultPlanExecutor.java:111)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.executeWithServices(DefaultTaskExecutionGraph.java:146)
+	at org.gradle.execution.taskgraph.DefaultTaskExecutionGraph.execute(DefaultTaskExecutionGraph.java:131)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:35)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:54)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor$ExecuteTasks.call(BuildOperationFiringBuildWorkerExecutor.java:43)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.execution.BuildOperationFiringBuildWorkerExecutor.execute(BuildOperationFiringBuildWorkerExecutor.java:40)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.lambda$executeTasks$10(DefaultBuildLifecycleController.java:313)
+	at org.gradle.internal.model.StateTransitionController.doTransition(StateTransitionController.java:276)
+	at org.gradle.internal.model.StateTransitionController.lambda$tryTransition$8(StateTransitionController.java:187)
+	at org.gradle.internal.work.DefaultSynchronizer.withLock(DefaultSynchronizer.java:45)
+	at org.gradle.internal.model.StateTransitionController.tryTransition(StateTransitionController.java:187)
+	at org.gradle.internal.build.DefaultBuildLifecycleController.executeTasks(DefaultBuildLifecycleController.java:304)
+	at org.gradle.internal.build.DefaultBuildWorkGraphController$DefaultBuildWorkGraph.runWork(DefaultBuildWorkGraphController.java:220)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.lambda$withLocksAcquired$0(DefaultWorkerLeaseService.java:269)
+	at org.gradle.internal.work.ResourceLockStatistics$1.measure(ResourceLockStatistics.java:42)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocksAcquired(DefaultWorkerLeaseService.java:267)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:259)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.runAsWorkerThread(DefaultWorkerLeaseService.java:127)
+	at org.gradle.composite.internal.DefaultBuildController.doRun(DefaultBuildController.java:181)
+	at org.gradle.composite.internal.DefaultBuildController.access$000(DefaultBuildController.java:50)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.lambda$run$0(DefaultBuildController.java:198)
+	at org.gradle.internal.operations.CurrentBuildOperationRef.with(CurrentBuildOperationRef.java:84)
+	at org.gradle.composite.internal.DefaultBuildController$BuildOpRunnable.run(DefaultBuildController.java:198)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:47)
+Caused by: org.gradle.api.internal.tasks.compile.CompilationFailedException: Compilation failed; see the compiler output below.
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/base/CustomDrawContext.java:54: error: cannot find symbol
+import net.minecraft.item.ModelTransformationMode;
+                         ^
+  symbol:   class ModelTransformationMode
+  location: package net.minecraft.item
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/RenderUtility.java:19: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/RenderUtility.java:25: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/Draw3DUtility.java:23: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/Draw3DUtility.java:28: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/Draw3DUtility.java:29: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/CrystalRenderer.java:22: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/CrystalRenderer.java:23: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/CrystalRenderer.java:26: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/Batching.java:18: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/Batching.java:20: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/Batching.java:26: error: cannot find symbol
+    public Batching(VertexFormat vertexFormat) {
+                    ^
+  symbol:   class VertexFormat
+  location: class Batching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/TextBatchManager.java:25: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/TextBatchManager.java:27: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/TextBatchManager.java:31: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:18: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:19: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:20: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RectBatching.java:27: error: cannot find symbol
+    public RectBatching(VertexFormat vertexFormat, MatrixStack matrices) {
+                        ^
+  symbol:   class VertexFormat
+  location: class RectBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FadeOutBatching.java:17: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FadeOutBatching.java:18: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FadeOutBatching.java:28: error: cannot find symbol
+    public FadeOutBatching(VertexFormat vertexFormat, MsdfFont font, float fadeoutStart, float fadeoutEnd, float maxWidth, float x) {
+                           ^
+  symbol:   class VertexFormat
+  location: class FadeOutBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/RoundedRectBatching.java:17: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:28: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:29: error: cannot find symbol
+import net.minecraft.client.render.RenderPhase;
+                                  ^
+  symbol:   class RenderPhase
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:30: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:37: error: cannot find symbol
+    protected ShaderProgramKey programKey;
+              ^
+  symbol:   class ShaderProgramKey
+  location: class GlProgram
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:39: error: cannot find symbol
+    public GlProgram(Identifier id, VertexFormat vertexFormat) {
+                                    ^
+  symbol:   class VertexFormat
+  location: class GlProgram
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/GlProgram.java:52: error: package RenderPhase does not exist
+    public RenderPhase.ShaderProgram renderPhaseProgram() {
+                      ^
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:18: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:19: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:20: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/IconBatching.java:27: error: cannot find symbol
+    public IconBatching(VertexFormat vertexFormat, MatrixStack matrices) {
+                        ^
+  symbol:   class VertexFormat
+  location: class IconBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/ShadowBatching.java:16: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/ShadowBatching.java:27: error: cannot find symbol
+    public ShadowBatching(VertexFormat vertexFormat, MatrixStack matrices, float width, float height, float softness, BorderRadius borderRadius) {
+                          ^
+  symbol:   class VertexFormat
+  location: class ShadowBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FontBatching.java:17: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FontBatching.java:18: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/FontBatching.java:24: error: cannot find symbol
+    public FontBatching(VertexFormat vertexFormat, MsdfFont font) {
+                        ^
+  symbol:   class VertexFormat
+  location: class FontBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/SquircleBatching.java:17: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/BlurBatching.java:13: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/batching/impl/BlurBatching.java:22: error: cannot find symbol
+    public BlurBatching(VertexFormat vertexFormat, MatrixStack matrices, float width, float height) {
+                        ^
+  symbol:   class VertexFormat
+  location: class BlurBatching
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:50: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:51: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:54: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/render/DrawUtility.java:57: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/impl/BlurProgram.java:30: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/framework/shader/impl/BlurProgram.java:32: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/game/ElytraUtility.java:49: error: cannot find symbol
+import net.minecraft.item.ArmorItem;
+                         ^
+  symbol:   class ArmorItem
+  location: package net.minecraft.item
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/utility/game/EntityUtility.java:42: error: cannot find symbol
+import net.minecraft.item.SwordItem;
+                         ^
+  symbol:   class SwordItem
+  location: package net.minecraft.item
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:32: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:51: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:52: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:54: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ObjectInfo.java:58: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:24: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:44: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:45: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:47: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/World.java:50: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:57: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:92: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:93: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Prediction.java:97: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:22: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:41: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:42: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:44: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/KillEffects.java:47: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:21: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:45: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:46: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Arrows.java:48: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:21: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:22: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:24: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/HitEffect.java:25: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:20: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:21: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:33: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:35: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/ItemRadius.java:39: error: package net.minecraft.client.render.VertexFormat does not exist
+import net.minecraft.client.render.VertexFormat.DrawMode;
+                                               ^
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:3: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:19: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:20: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/Jump.java:22: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:32: error: cannot find symbol
+import com.mojang.blaze3d.platform.GlStateManager;
+                                  ^
+  symbol:   class GlStateManager
+  location: package com.mojang.blaze3d.platform
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:54: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:55: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:57: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/TargetESP.java:61: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/FriendMarkers.java:31: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/BlockESP.java:17: error: cannot find symbol
+import net.minecraft.client.render.VertexFormat;
+                                  ^
+  symbol:   class VertexFormat
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/BlockESP.java:26: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/BlockESP.java:27: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:22: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKey;
+                              ^
+  symbol:   class ShaderProgramKey
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:23: error: cannot find symbol
+import net.minecraft.client.gl.ShaderProgramKeys;
+                              ^
+  symbol:   class ShaderProgramKeys
+  location: package net.minecraft.client.gl
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:34: error: cannot find symbol
+import net.minecraft.client.render.BufferRenderer;
+                                  ^
+  symbol:   class BufferRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/systems/modules/modules/visuals/CustomHitBox.java:40: error: package net.minecraft.client.render.VertexFormat does not exist
+import net.minecraft.client.render.VertexFormat.DrawMode;
+                                               ^
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/mixin/minecraft/client/gui/overlay/BackgroundRendererMixin.java:27: error: cannot find symbol
+import net.minecraft.client.render.BackgroundRenderer;
+                                  ^
+  symbol:   class BackgroundRenderer
+  location: package net.minecraft.client.render
+/home/runner/work/didactic-octo-trainyyyhhhhyy/didactic-octo-trainyyyhhhhyy/work/src/client/java/moscow/rockstar/mixin/minecraft/client/gui/overlay/BackgroundRendererMixin.java:29: error: cannot find symbol
+import net.minecraft.client.render.Fog;
+                                  ^
+  symbol:   class Fog
+  location: package net.minecraft.client.render
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:89)
+	at org.gradle.api.internal.tasks.compile.JdkJavaCompiler.execute(JdkJavaCompiler.java:50)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.delegateAndHandleErrors(NormalizingJavaCompiler.java:98)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler.execute(NormalizingJavaCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.AnnotationProcessorDiscoveringCompiler.execute(AnnotationProcessorDiscoveringCompiler.java:38)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:46)
+	at org.gradle.api.internal.tasks.compile.ModuleApplicationNameWritingCompiler.execute(ModuleApplicationNameWritingCompiler.java:36)
+	at org.gradle.jvm.toolchain.internal.DefaultToolchainJavaCompiler.execute(DefaultToolchainJavaCompiler.java:57)
+	at org.gradle.api.tasks.compile.JavaCompile.lambda$createToolchainCompiler$3(JavaCompile.java:206)
+	at org.gradle.api.internal.tasks.compile.CleaningJavaCompiler.execute(CleaningJavaCompiler.java:53)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalCompilerFactory.lambda$createRebuildAllCompiler$0(IncrementalCompilerFactory.java:55)
+	at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:70)
+	at org.gradle.api.internal.tasks.compile.incremental.SelectiveCompiler.execute(SelectiveCompiler.java:44)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:66)
+	at org.gradle.api.internal.tasks.compile.incremental.IncrementalResultStoringCompiler.execute(IncrementalResultStoringCompiler.java:52)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:64)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler$1.call(CompileJavaBuildOperationReportingCompiler.java:48)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.api.internal.tasks.compile.CompileJavaBuildOperationReportingCompiler.execute(CompileJavaBuildOperationReportingCompiler.java:48)
+	at org.gradle.api.tasks.compile.JavaCompile.performCompilation(JavaCompile.java:224)
+	at org.gradle.api.tasks.compile.JavaCompile.performIncrementalCompilation(JavaCompile.java:165)
+	at org.gradle.api.tasks.compile.JavaCompile.compile(JavaCompile.java:150)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:125)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.doExecute(IncrementalTaskAction.java:45)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:51)
+	at org.gradle.api.internal.project.taskfactory.IncrementalTaskAction.execute(IncrementalTaskAction.java:26)
+	at org.gradle.api.internal.project.taskfactory.StandardTaskAction.execute(StandardTaskAction.java:29)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$3.run(TaskExecution.java:259)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:47)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeAction(TaskExecution.java:244)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeActions(TaskExecution.java:227)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.executeWithPreviousOutputFiles(TaskExecution.java:210)
+	at org.gradle.api.internal.tasks.execution.TaskExecution.execute(TaskExecution.java:176)
+	at org.gradle.internal.execution.steps.ExecuteStep.executeInternal(ExecuteStep.java:110)
+	at org.gradle.internal.execution.steps.ExecuteStep.access$000(ExecuteStep.java:47)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:64)
+	at org.gradle.internal.execution.steps.ExecuteStep$1.call(ExecuteStep.java:61)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:209)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:204)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:66)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$2.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:166)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:59)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:53)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:61)
+	at org.gradle.internal.execution.steps.ExecuteStep.execute(ExecuteStep.java:47)
+	at org.gradle.internal.execution.steps.CancelExecutionStep.execute(CancelExecutionStep.java:42)
+	at org.gradle.internal.execution.steps.TimeoutStep.executeWithoutTimeout(TimeoutStep.java:75)
+	at org.gradle.internal.execution.steps.TimeoutStep.execute(TimeoutStep.java:55)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:51)
+	at org.gradle.internal.execution.steps.PreCreateOutputParentsStep.execute(PreCreateOutputParentsStep.java:29)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.executeMutable(RemovePreviousOutputsStep.java:70)
+	at org.gradle.internal.execution.steps.RemovePreviousOutputsStep.executeMutable(RemovePreviousOutputsStep.java:40)
+	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:25)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:62)
+	at org.gradle.internal.execution.steps.BroadcastChangingOutputsStep.execute(BroadcastChangingOutputsStep.java:27)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:69)
+	at org.gradle.internal.execution.steps.CaptureOutputsAfterExecutionStep.execute(CaptureOutputsAfterExecutionStep.java:46)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.executeMutable(ResolveInputChangesStep.java:39)
+	at org.gradle.internal.execution.steps.ResolveInputChangesStep.executeMutable(ResolveInputChangesStep.java:28)
+	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:25)
+	at org.gradle.internal.execution.steps.BuildCacheStep.executeWithoutCache(BuildCacheStep.java:192)
+	at org.gradle.internal.execution.steps.BuildCacheStep.lambda$execute$1(BuildCacheStep.java:76)
+	at org.gradle.internal.Either$Right.fold(Either.java:176)
+	at org.gradle.internal.execution.caching.CachingState.fold(CachingState.java:62)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:74)
+	at org.gradle.internal.execution.steps.BuildCacheStep.execute(BuildCacheStep.java:49)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:46)
+	at org.gradle.internal.execution.steps.StoreExecutionStateStep.execute(StoreExecutionStateStep.java:35)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.executeBecause(SkipUpToDateStep.java:75)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.lambda$execute$2(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:53)
+	at org.gradle.internal.execution.steps.SkipUpToDateStep.execute(SkipUpToDateStep.java:35)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:37)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsFinishedStep.execute(MarkSnapshottingInputsFinishedStep.java:27)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:49)
+	at org.gradle.internal.execution.steps.ResolveIncrementalCachingStateStep.executeDelegate(ResolveIncrementalCachingStateStep.java:27)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:71)
+	at org.gradle.internal.execution.steps.AbstractResolveCachingStateStep.execute(AbstractResolveCachingStateStep.java:39)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.executeMutable(ResolveChangesStep.java:63)
+	at org.gradle.internal.execution.steps.ResolveChangesStep.executeMutable(ResolveChangesStep.java:34)
+	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:25)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:64)
+	at org.gradle.internal.execution.steps.ValidateStep.execute(ValidateStep.java:42)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:77)
+	at org.gradle.internal.execution.steps.AbstractCaptureStateBeforeExecutionStep.execute(AbstractCaptureStateBeforeExecutionStep.java:46)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.executeWithNonEmptySources(AbstractSkipEmptyWorkStep.java:133)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:64)
+	at org.gradle.internal.execution.steps.AbstractSkipEmptyWorkStep.execute(AbstractSkipEmptyWorkStep.java:36)
+	at org.gradle.internal.execution.steps.legacy.MarkSnapshottingInputsStartedStep.execute(MarkSnapshottingInputsStartedStep.java:38)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:36)
+	at org.gradle.internal.execution.steps.LoadPreviousExecutionStateStep.execute(LoadPreviousExecutionStateStep.java:23)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.executeMutable(HandleStaleOutputsStep.java:77)
+	at org.gradle.internal.execution.steps.HandleStaleOutputsStep.executeMutable(HandleStaleOutputsStep.java:43)
+	at org.gradle.internal.execution.steps.MutableStep.execute(MutableStep.java:25)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.lambda$execute$0(AssignMutableWorkspaceStep.java:35)
+	at org.gradle.api.internal.tasks.execution.TaskExecution$4.withWorkspace(TaskExecution.java:305)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:31)
+	at org.gradle.internal.execution.steps.AssignMutableWorkspaceStep.execute(AssignMutableWorkspaceStep.java:22)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:40)
+	at org.gradle.internal.execution.steps.ChoosePipelineStep.execute(ChoosePipelineStep.java:23)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.lambda$execute$2(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:67)
+	at org.gradle.internal.execution.steps.ExecuteWorkBuildOperationFiringStep.execute(ExecuteWorkBuildOperationFiringStep.java:39)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:46)
+	at org.gradle.internal.execution.steps.IdentityCacheStep.execute(IdentityCacheStep.java:34)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:44)
+	at org.gradle.internal.execution.steps.IdentifyStep.execute(IdentifyStep.java:31)
+	at org.gradle.internal.execution.impl.DefaultExecutionEngine$1.execute(DefaultExecutionEngine.java:68)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeIfValid(ExecuteActionsTaskExecuter.java:132)
+	... 61 more
+
+
+BUILD FAILED in 1m 22s
+8 actionable tasks: 8 executed
