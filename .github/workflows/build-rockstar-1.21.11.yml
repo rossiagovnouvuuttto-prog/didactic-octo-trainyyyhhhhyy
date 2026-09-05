@@ -14,33 +14,35 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
-      - name: Checkout
+      - name: Checkout delivery repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Download prepared 1.21.11 source
-        shell: bash
-        run: |
-          set -euxo pipefail
-          curl -L --fail --retry 3 --retry-delay 2 \
-            'https://drive.usercontent.google.com/download?id=12IZ9jAO3VbjBRVU7sP2tAoHDWYlpRMV4&export=download&confirm=t' \
-            -o rockstar-client-1.21.11-port.zip
-          ls -lh rockstar-client-1.21.11-port.zip
-          file rockstar-client-1.21.11-port.zip
-          unzip -t rockstar-client-1.21.11-port.zip >/dev/null
-
-      - name: Extract source
+      - name: Clone Rockstar source
         shell: bash
         run: |
           set -euxo pipefail
           rm -rf work
-          mkdir work
-          unzip -q rockstar-client-1.21.11-port.zip -d work
-          project="$(find work -mindepth 1 -maxdepth 1 -type d | head -n1)"
-          test -n "$project"
-          echo "PROJECT=$GITHUB_WORKSPACE/$project" >> "$GITHUB_ENV"
-          echo "PROJECT=$GITHUB_WORKSPACE/$project"
+          git clone --depth=1 --branch master https://github.com/swaga1444/Wave-Visual.git work
+          cd work
+          sed -i 's/^minecraft_version=.*/minecraft_version=1.21.11/' gradle.properties
+          sed -i 's/^yarn_mappings=.*/yarn_mappings=1.21.11+build.6/' gradle.properties
+          sed -i 's/^loader_version=.*/loader_version=0.19.5/' gradle.properties
+          sed -i 's/^fabric_api_version=.*/fabric_api_version=0.141.6+1.21.11/' gradle.properties
+          sed -i 's/^org.gradle.jvmargs=.*/org.gradle.jvmargs=-Xmx6G -Dfile.encoding=UTF-8/' gradle.properties
+          echo '=== patched gradle.properties ==='
+          cat gradle.properties
+
+      - name: Apply compatibility patch if present
+        shell: bash
+        run: |
+          set -euxo pipefail
+          if [ -f scripts/patch-wave-1.21.11.py ]; then
+            python3 scripts/patch-wave-1.21.11.py work
+          fi
 
       - name: Set up Java 21
         uses: actions/setup-java@v4
@@ -48,35 +50,52 @@ jobs:
           distribution: temurin
           java-version: '21'
 
-      - name: Build
+      - name: Build and capture log
+        id: gradle
+        continue-on-error: true
         shell: bash
         run: |
-          set -o pipefail
-          cd "$PROJECT"
+          set +e
+          cd work
           chmod +x gradlew
-          ./gradlew clean build --no-daemon --stacktrace 2>&1 | tee "$GITHUB_WORKSPACE/build.log"
+          ./gradlew clean build --no-daemon --stacktrace > "$GITHUB_WORKSPACE/build-rockstar-1.21.11.log" 2>&1
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          tail -n 250 "$GITHUB_WORKSPACE/build-rockstar-1.21.11.log" || true
+          exit 0
 
-      - name: Collect JAR
+      - name: Collect result
         shell: bash
         run: |
           set -euxo pipefail
           mkdir -p release
-          jar="$(find "$PROJECT/build/libs" -maxdepth 1 -type f -name '*.jar' ! -name '*-sources.jar' ! -name '*-dev.jar' | head -n1)"
-          test -n "$jar"
-          cp "$jar" release/rockstar-client-1.21.11.jar
-          ls -lh release/rockstar-client-1.21.11.jar
+          if [ "${{ steps.gradle.outputs.exit_code }}" = "0" ]; then
+            jar="$(find work/build/libs -maxdepth 1 -type f -name '*.jar' ! -name '*-sources.jar' ! -name '*-dev.jar' | head -n1)"
+            test -n "$jar"
+            cp "$jar" release/rockstar-client-1.21.11.jar
+            printf 'SUCCESS\n' > build-status.txt
+          else
+            printf 'FAILED exit_code=%s\n' '${{ steps.gradle.outputs.exit_code }}' > build-status.txt
+          fi
+
+      - name: Publish log and jar to branch
+        shell: bash
+        run: |
+          set -euxo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f build-rockstar-1.21.11.log build-status.txt
+          if [ -f release/rockstar-client-1.21.11.jar ]; then git add -f release/rockstar-client-1.21.11.jar; fi
+          git commit -m 'Rockstar 1.21.11 build result [skip ci]' || true
+          git push origin HEAD:rockstar-1.21.11
+
+      - name: Fail if build failed
+        if: ${{ steps.gradle.outputs.exit_code != '0' }}
+        run: exit 1
 
       - name: Upload artifact
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: rockstar-client-1.21.11
           path: release/rockstar-client-1.21.11.jar
-
-      - name: Publish JAR to branch
-        shell: bash
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f release/rockstar-client-1.21.11.jar
-          git commit -m 'Build Rockstar Client 1.21.11 [skip ci]' || true
-          git push origin HEAD:rockstar-1.21.11
